@@ -29,10 +29,10 @@ usage = "usage: %prog [options]"
 parser = OptionParser(usage=usage)
 parser.add_option("", "--servers",
                   dest="servers", default="localhost:2181",
-                  help="comma separated list of host:port (default localhost:2181)")
+                  help="comma separated list of host:port (default %default)")
 parser.add_option("-n", "--names",
                   action="store_true", dest="names", default=False,
-                  help="resolve session name from ip (default False)")
+                  help="resolve session name from ip (default %default)")
 parser.add_option("", "--fix_330",
                   action="store_true", dest="fix_330", default=False,
                   help="workaround for a bug in ZK 3.3.0")
@@ -41,7 +41,7 @@ parser.add_option("-v", "--verbosity",
                   help="log level verbosity (DEBUG, INFO, WARN(ING), ERROR, CRITICAL/FATAL)")
 parser.add_option("-l", "--logfile",
                   dest="logfile", default=None,
-                  help="directory in which to place log file, or empty for none")
+                  help="path to write log file to (default %default)")
 parser.add_option("-c", "--config",
                   dest="configfile", default=None,
                   help="zookeeper configuration file to lookup servers from")

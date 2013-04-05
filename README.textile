@@ -63,8 +63,7 @@ Options:
   -v VERBOSITY, --verbosity=VERBOSITY
                         log level verbosity (DEBUG, INFO, WARN(ING), ERROR, CRITICAL/FATAL))
   -l LOGFILE, --logfile=LOGFILE
-                        directory in which to place log file, or empty for
-                        none
+                        path to write log file to (default None)
   -c CONFIGFILE, --config=CONFIGFILE
                         zookeeper configuration file to lookup servers from
 </pre>
